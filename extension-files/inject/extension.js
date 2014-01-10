@@ -22,7 +22,7 @@ if (angularExists) {
 }
 
 function makeWishForAnchors() {
-  $($('a').get().reverse()).each(function() {
+  $($('a,button').get().reverse()).each(function() {
     var $a = $(this);
     var magicWords = getMagicWords($a);
     if (magicWords.length > 0) {
@@ -61,6 +61,10 @@ function getMagicWords($a) {
   var text = formatMagicWord($a.text());
   if (text && text.length > 2) {
     magicWords.push(text);
+  }
+  var value = formatMagicWord($a.attr('value'));
+  if (value && value.length > 2) {
+    magicWords.push(value);
   }
   var title = formatMagicWord($a.attr('title'));
   if (title && title.length > 2) {
