@@ -11,22 +11,22 @@
   "homepage_url": "https://github.com/kentcdodds/genies-lamp",
   
   "icons": {
-    "16": "16.png",
-    "48": "48.png",
-    "128": "128.png"
+    "16": "images/16.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": [
-        "jquery.js",
-        "pre-load.js",
-        "angular.js",
-        "genie.js",
-        "uxGenie.js",
-        "extension.js"
+        "inject/pre-load.js",
+        "vendor/jquery.js",
+        "vendor/angular.js",
+        "vendor/genie.js",
+        "vendor/uxGenie.js",
+        "inject/extension.js"
       ],
-      "css": ["styles.css"]
+      "css": ["inject/styles.css"]
     }
   ]
 }
