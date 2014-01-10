@@ -1,0 +1,103 @@
+.genie-extension .genie-container {
+  opacity: 0;
+  transition: all .2s ease-in-out;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: -1;
+  -mos-border-radius: 8px;
+  border-radius: 8px;
+  color: #333;
+  background-color: #F7F7F7;
+  box-shadow: 0px 0px 26px 6px #414141;
+  width: 600px;
+  margin-left: -300px;
+  padding: 16px;
+  text-align: left;
+}
+
+.genie-extension .genie-container.visible {
+  opacity: 1;
+  z-index: 2050;
+}
+
+.genie-extension .genie-container input.lamp-input {
+  margin: 0;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  font-size: 34px;
+  height: 60px;
+  box-sizing: border-box;
+  
+  -mos-border-radius: 8px;
+  border-radius: 8px;
+
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  display: block;
+
+  -webkit-appearance: textfield;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  cursor: auto;
+
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+
+  -webkit-writing-mode: horizontal-tb;
+}
+
+.genie-extension .genie-container input.lamp-input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+}
+
+.genie-extension .genie-container .genie-wishes {
+  margin-top: 10px;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  max-height: 300px;
+  font-size: 30px;
+}
+
+.genie-extension .genie-container .genie-wishes .genie-wish {
+  padding: 0 12px 0 12px;
+  line-height: 50px;
+}
+
+.genie-extension .genie-container .genie-wishes .genie-wish [class^="icon-"], [class*="icon-"] {
+  display: inline;
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.genie-extension .genie-container .genie-wishes .genie-wish img {
+  display: inline;
+  max-height: 32px;
+  width: 32px;
+  margin-right: 10px;
+  vertical-align: text-top;
+}
+
+.genie-extension .genie-container .genie-wishes .genie-wish.focused {
+  -mos-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #DDD;
+}
