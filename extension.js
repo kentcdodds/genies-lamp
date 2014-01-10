@@ -10,13 +10,13 @@ var lampExists = $('[ux-lamp],[data-ux-lamp]').length > 0;
 if (lampExists) {
   log('there is already a lamp on this page. Don\'t want to mess with it...');
 } else {
-  makeWishForAnchors();
-
-  var lamp = '<div class="genie-extension"><div ux-lamp lamp-visible="genieVisible" rub-class="visible" local-storage="true"></div></div>';
-  $('body').append(lamp);
-
-  angular.module('genie-extension', ['uxGenie']);
-  angular.bootstrap($('.genie-extension')[0], ['genie-extension']);
+    makeWishForAnchors();
+  
+    var lamp = '<div class="genie-extension"><div ux-lamp lamp-visible="genieVisible" rub-class="visible" local-storage="true"></div></div>';
+    $('body').append(lamp);
+  
+    angular.module('genie-extension', ['uxGenie']);
+    angular.bootstrap($('.genie-extension')[0], ['genie-extension']);
 }
 
 function makeWishForAnchors() {

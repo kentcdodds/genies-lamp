@@ -81,7 +81,8 @@
   line-height: 50px;
 }
 
-.genie-extension .genie-container .genie-wishes .genie-wish [class^="icon-"], [class*="icon-"] {
+.genie-extension .genie-container .genie-wishes .genie-wish [class^="icon-"],
+.genie-extension .genie-container .genie-wishes .genie-wish [class*="icon-"] {
   display: inline;
   font-size: 30px;
   margin-right: 10px;
