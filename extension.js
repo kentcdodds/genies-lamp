@@ -16,6 +16,7 @@ if (lampExists) {
     $('body').append(lamp);
   
     angular.module('genie-extension', ['uxGenie']);
+    window.name = '';
     angular.bootstrap($('.genie-extension')[0], ['genie-extension']);
 }
 

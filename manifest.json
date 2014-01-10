@@ -3,7 +3,6 @@
   
   "name": "Genie's Lamp",
   "short_name": "Genie's Lamp",
-  "default_locale": "en",
   "description": "An extension to put genie's lamp in every website you visit.",
   "version": "0.0.1",
   
