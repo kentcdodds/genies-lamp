@@ -4,7 +4,7 @@
   "name": "Genie's Lamp",
   "short_name": "Genie's Lamp",
   "description": "An extension to put genie's lamp in every website you visit.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   
   "author": "Kent C. Dodds <kent@doddsfamily.us>",
   
@@ -15,18 +15,16 @@
     "48": "images/48.png",
     "128": "images/128.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": [
-        "inject/pre-load.js",
-        "vendor/jquery.js",
-        "vendor/angular.js",
-        "vendor/genie.js",
-        "vendor/uxGenie.js",
-        "inject/extension.js"
-      ],
-      "css": ["inject/styles.css"]
-    }
+
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "bg/background.js"
+    ]
+  },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>"
   ]
 }
